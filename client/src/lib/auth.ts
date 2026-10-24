@@ -42,7 +42,8 @@ export function useAuth() {
     },
     async logout() {
       await api('/auth/logout', { method: 'POST' });
-      queryClient.clear();
+      // Keep the "me" query itself: removing it would detach mounted useAuth() observers
+      queryClient.removeQueries({ predicate: (q) => q.queryKey[0] !== ME_KEY[0] });
       setUser(null);
     },
   };
