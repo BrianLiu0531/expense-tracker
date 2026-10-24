@@ -116,7 +116,7 @@ The integration suite runs against a separate `expense_test` database and covers
 The `Dockerfile` builds one image that runs migrations on start-up. It works on any container host, for example:
 
 1. Create a free PostgreSQL database on [Neon](https://neon.tech).
-2. Create a **Web Service** on [Render](https://render.com) from this repo using the Dockerfile.
+2. On [Render](https://render.com), choose **New → Blueprint** and pick this repo; [`render.yaml`](render.yaml) sets up a free Docker web service and generates `JWT_SECRET`.
 3. Set the environment variables `DATABASE_URL`, `JWT_SECRET` (a long random string) and `NODE_ENV=production`.
 4. Optionally run the seed once to create the demo account.
 
