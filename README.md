@@ -1,6 +1,6 @@
 # 💰 Ledgerly — Expense Tracker for Australia & New Zealand
 
-![CI](https://github.com/<your-github-username>/expense-tracker/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/BrianLiu0531/expense-tracker/actions/workflows/ci.yml/badge.svg)
 
 A full-stack personal finance app that tracks income and expenses **by the Australian or New Zealand financial year** and produces a **GST summary** (useful for sole traders preparing a BAS or GST return).
 
